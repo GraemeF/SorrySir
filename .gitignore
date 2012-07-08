@@ -13,3 +13,6 @@ results
 
 node_modules
 npm-debug.log
+
+cover_html
+.coverage_data

@@ -8,8 +8,22 @@
     "type": "git",
     "url": "git://github.com/GraemeF/SorrySir.git"
   },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha",
+    "lint": "node ./node_modules/jshint/bin/hint *.js --show-non-errors",
+    "cover": "node ./node_modules/cover/bin/cover run node_modules/mocha/bin/_mocha && node ./node_modules/cover/bin/cover report html",
+    "start": "node server.js"
+  },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "~1.3.0",
+    "chai": "~1.1.0",
+    "jshint": "~0.7.1",
+    "cover": "~0.2.8",
+    "patience": "~0.1.1",
+    "sinon": "~1.3.4",
+    "sinon-chai": "~2.1.2"
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
